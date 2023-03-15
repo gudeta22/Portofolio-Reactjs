@@ -4,33 +4,25 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full h-full h-50 bg-white"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full md:h-screen">
+        <div className="pb-6">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500 ">
             About
           </p>
         </div>
 
-        <p className="text-xl mt-20">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-          deserunt illum mollitia officiis qui exercitationem perferendis neque
-          quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-          iste, totam fugiat recusandae rerum laborum perferendis molestiae
-          aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-          ab mollitia voluptatibus, a nostrum eveniet laborum!
+        <p className="text-xl  my-0 py-10">
+        Hi, my name is Gudeta, and I am a web developer with a passion for building beautiful and functional websites. I have experience in front-end and back-end web development, as well as database design and management. My skills include proficiency in HTML, CSS, JavaScript, and popular frameworks such as React and Angular.
         </p>
 
-        <br />
+       <p className="text-xl py-0">
+       Throughout my career, I have worked on numerous web development projects, including e-commerce sites, social media platforms, and online marketplaces. One of my most notable projects involved developing a custom content management system for a digital marketing agency, which allowed them to efficiently manage their clients' websites and content.
+        </p>
 
-        <p className="text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          pariatur, vel similique sint, nobis aspernatur ut praesentium
-          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-          magni quo! Eum cupiditate debitis labore.
+        <p className="text-xl py-10">
+        My approach to web development is centered around usability, accessibility, and scalability. I believe that effective web development requires a strong focus on understanding the needs of the end-users and ensuring that the websites I develop are user-friendly, responsive, and accessible across all devices. Overall, I am excited to continue learning and growing as a web developer and to contribute to innovative and impactful projects.
         </p>
       </div>
     </div>

@@ -1,23 +1,38 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.png";
+import HeroImage from "../assets/porto.jpeg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import Typical from "react-typical";
 
 const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
-    >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+      className="h-screen w-full bg-gray-900 md:gap-8  lg:gap-8">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row md:px-8 md:space-x-12">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a Full Stack Developer
-          </h2>
-          <p className="text-gray-500 py-4 max-w-md">
-            I have 8 years of experience building and desgining software.
-            Currently, I love to work on web application using technologies like
-            React, Tailwind, Next JS and GraphQL.
+          <p className="text-xl sm:text-4xl text-yellow-600">
+            Hi! 👋<br />
+           <Typical 
+              loop={5} 
+             
+              steps={[
+                '',
+                1000,
+                `My name is Gudeta  Buli`,
+                3000,
+                '',
+                1000,
+                "I'm a Software Engineer",
+                 3000              
+                ]}
+               />
+          </p>
+        
+          <p className="text-gray-400 py-5  ">
+          Software Engineer with a history of working in the computer software industry. 
+          Skilled in Javascript , nodejs , expressjs, and HTML. Strong engineering professional 
+          with a Bachelor's degree focused in web Development.
           </p>
 
           <div>
@@ -25,8 +40,8 @@ const Home = () => {
               to="portfolio"
               smooth
               duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
-            >
+              className="group text-black w-fit px-6 py-3 my-2 flex items-center rounded-md bg-yellow-600 cursor-pointer "
+                >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
@@ -39,7 +54,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="my profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+            className="rounded-xl h-auto md:display mx-auto w-2/3 md:w-auto md:w-  lg:w-auto md:h-auto lg:h-auto"
           />
         </div>
       </div>
