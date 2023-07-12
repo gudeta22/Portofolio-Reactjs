@@ -4,8 +4,8 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import nextjs from "../assets/node.png";
-
+import nextjs from "../assets/portfolio/node.jpg";
+import git from "../assets/portfolio/icons8-git-48.png"
 import github from "../assets/a.png";
 import tailwind from "../assets/tailwind.png";
 
@@ -32,27 +32,35 @@ const Experience = () => {
     {
       id: 4,
       src: reactImage,
-      title: "React",
-      style: "shadow-blue-600",
+      title: "Reactjs",
+      style: "shadow-blue-500",
     },
     {
       id: 5,
       src: tailwind,
       title: "Tailwind",
-      style: "shadow-sky-400",
+      style: "shadow-cyan-600",
     },
     {
-      id: 7,
+      id: 6,
       src: nextjs,
       title: "Nodejs",
       style: "shadow-green-400",
     },
+    {
+      id: 7,
+      src: git,
+      title: "Git",
+      style: "shadow-orange-400",
+    },
+   
     {
       id: 8,
       src: github,
       title: "GitHub",
       style: "shadow-gray-900",
     },
+    
   ];
 
   return (
@@ -65,10 +73,10 @@ const Experience = () => {
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-3  py-3 inline my-10">
             Experience
           </p>
-          <p className="py-10">These are the technologies I've worked with</p>
+          <p className="py-10">These are the technologies I've worked with:</p>
         </div>
 
-        <div className=" h w-full h-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-5 px-12 sm:px-0">
+        <div className="w-full h-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-5 px-12 sm:px-0">
           {techs.map(({ id, src, title,style }) => (
             <div
               key={id}

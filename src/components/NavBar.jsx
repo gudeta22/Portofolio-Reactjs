@@ -30,7 +30,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-yellow-600 bg-gray-900  fixed">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-yellow-600 bg-gray-900  fixed z-50">
       <div className="w-20 h-15  py-8 md:mx-8 lg:h-30 lg:w-30">
        
           <img src={logo} alt="logo" />
