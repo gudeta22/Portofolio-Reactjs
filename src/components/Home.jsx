@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/porto.jpeg";
+import HeroImage from "../assets/programmer.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import Typical from "react-typical";
@@ -13,25 +13,26 @@ const Home = () => {
         <div className="flex flex-col justify-center h-full">
           <p className="text-xl sm:text-4xl text-yellow-600">
             Hi! 👋<br />
-           <Typical 
+            <h2>My Name Is  Gudeta B.</h2>
+           {/* <Typical 
               loop={5} 
              
               steps={[
                 '',
-                1000,
+              
                 `My name is Gudeta  Buli`,
-                3000,
+               
                 '',
-                1000,
+             
                 "I'm a Software Engineer",
-                 3000              
+                            
                 ]}
-               />
+               /> */}
           </p>
         
           <p className="text-gray-400 py-5  ">
           Software Engineer with a history of working in the computer software industry. 
-          Skilled in Javascript , nodejs , expressjs, and HTML. Strong engineering professional 
+          Skilled in Javascript , nodejs , expressjs, , Tailwindcss  and HTML. Strong engineering professional 
           with a Bachelor's degree focused in web Development.
           </p>
 
@@ -54,7 +55,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="my profile"
-            className="rounded-xl h-auto md:display mx-auto w-2/3 md:w-auto md:w-  lg:w-auto md:h-auto lg:h-auto"
+            className="rounded-xl lg:w-[150rem] md:display mx-[] w-2/3 md:w-auto   md:h-auto lg:h-auto "
           />
         </div>
       </div>

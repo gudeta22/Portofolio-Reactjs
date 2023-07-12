@@ -25,7 +25,7 @@ const Contact = () => {
     //   message:message,
     // }).then(()=>
     // {
-    //   alert("Message Submitted!!")
+    //   alert("MesPOSTsage Submitted!!")
     // })
     // .catch((error)=>
     // {
@@ -51,8 +51,8 @@ const Contact = () => {
 
         <div className="flex justify-center items-center">
           <form
-            action="https://getform.io/f/61c99527-2b15-42cf-9b55-ad37d2f7daa6"
-            method="POST"
+            action="#"
+            method="#"
             className=" flex flex-col w-full md:w-1/2"
            
           >
@@ -65,7 +65,7 @@ const Contact = () => {
             <input
               type="text"
               name="email"
-              placeholder="Enter your email"
+              placeholder="Enter Your Email"
               className="my-4 p-2 bg-transparent border rounded-md text-white focus:outline-none"
             />
             <textarea
@@ -76,8 +76,9 @@ const Contact = () => {
              
             ></textarea>
 
-            <button className="text-black bg-yellow-600 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300" >
-              Let's talk
+            <button className="text-black bg-yellow-600 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300" 
+            onClick={()=>alert("Submitled Succesfully")}>
+              Let's talk!
             </button>
           </form>
         </div>
