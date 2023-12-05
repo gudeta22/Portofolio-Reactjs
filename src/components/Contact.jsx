@@ -1,22 +1,41 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-// import {db} from  './firebase'
+import React from "react";
+
+
 const Contact = () => {
- 
-     const form = useRef();
+  // const [name , setName] = useState('')
+  // const [email , setEmail] = useState('')
+  // const [message , setMessage] = useState('')
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const userCollectionRef = collection(db , 'contactdata')
+  // const handleSubmit = (e) =>
+  //   {
 
-    emailjs.sendForm('service_hfxwehb', 'template_ij8a79f', form.current, 'kh1d7ovz6_5F4yZfI')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
+  //     addDoc(userCollectionRef, {
+  //       name:name,
+  //        email:email,
+  //        message:message,
+  //     })
 
-  
+
+    // e.preventDefault();
+
+    // db.collection('contact').add({
+    //   name:name,
+    //   email:email,
+    //   message:message,
+    // }).then(()=>
+    // {
+    //   alert("MesPOSTsage Submitted!!")
+    // })
+    // .catch((error)=>
+    // {
+    //   alert(error.message)
+    // })
+
+    // setName('')
+    //  setEmail('')
+    // setMessage('')
+    
   return (
     <div
       name="contact"
@@ -32,44 +51,40 @@ const Contact = () => {
 
         <div className="flex justify-center items-center">
           <form
-            ref={form}
+            action="#"
+            method="#"
             className=" flex flex-col w-full md:w-1/2"
-            onSubmit={sendEmail}
            
           >
             <input
               type="text"
-              name="user_name"
+              name="name"
               placeholder="Enter your name"
               className="p-2 bg-transparent border rounded-md text-white focus:outline-none" 
-              required
             />
             <input
               type="text"
-              name="user_email"
-              placeholder="Enter your email"
+              name="email"
+              placeholder="Enter Your Email"
               className="my-4 p-2 bg-transparent border rounded-md text-white focus:outline-none"
-               required
             />
             <textarea
               name="message"
               placeholder="Enter your message"
               rows="10"
               className="p-2 bg-transparent border rounded-md text-white focus:outline-none"
-              required
-             
              
             ></textarea>
 
             <button className="text-black bg-yellow-600 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300" 
-            type='submit' value="Send" >
-              Let's talk
+            onClick={()=>alert("Submitled Succesfully")}>
+              Let's talk!
             </button>
           </form>
         </div>
       </div>
     </div>
   );
-              }          
+};
 
 export default Contact;
