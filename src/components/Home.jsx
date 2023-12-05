@@ -2,7 +2,7 @@ import React from "react";
 import HeroImage from "../assets/programmer.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 
 const Home = () => {
   return (
